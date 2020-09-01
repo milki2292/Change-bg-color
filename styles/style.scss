@@ -1,0 +1,41 @@
+@mixin flexCentre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  @include flexCentre();
+  height: 89vh;
+
+  .color {
+    @include flexCentre();
+    background: rgb(255, 255, 255);
+    width: 70vh;
+    height: 70vh;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    .actionBtn {
+        font-size: 20px;
+      border: none;
+      height: 2rem;
+      border-radius: 2px;
+      box-shadow: 5px 5px 10px 0.2px;
+      margin-bottom: 30px;
+      font-family: 'Roboto', sans-serif;
+      background: white;
+    }
+    .number{
+        padding:20px;
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
+    }
+    .hex_number{
+        padding:20px;
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
+    }
+    
+  }
+}
